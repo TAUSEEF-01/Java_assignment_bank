@@ -11,16 +11,7 @@ public class Bank
 {
     public static void main(String args[])
     {
-        // /* */
-        // Customer_attributes c = new Customer_attributes();
-        // c.a = "name";
-        // c.acc_number.update(c.a);
-        // c.acc_number.print();
-
-
-
         /* */
-        // Single_person sp = new Single_person(2);
         Single_person sp = new Single_person(1);
 
         sp.accNum = "yolo";
@@ -35,8 +26,6 @@ public class Bank
         sp.bkash = 800.0;
         sp.eft = 9.0;
 
-
-        
 
         sp.create(1);
         sp.print();
@@ -83,97 +72,102 @@ public class Bank
 
 
 
+        /* */
+        System.out.println();
+        System.out.println();
 
-        // // sp.singleCustomer[0].salary.update(1983.981);
-        // // sp.print();
+        Single_person sp2 = new Single_person(2);
 
-        // // sp.singleCustomer[0].salary.add(920);
-        // // sp.print();
-
-
-        // // sp.selected_user(0);
-        // // sp.singleCustomer[0].acc_number.update("jjdf");
-        // // sp.singleCustomer[0].bank_name.update("jjdf");
-        // // sp.singleCustomer[0].email.update("jjdf");
-        // // sp.singleCustomer[0].name.update("jjdf");
-        // // sp.singleCustomer[0].phone_number.update("jjdf");
-        // // sp.singleCustomer[0].bin.update("jjdf");
-        // // sp.singleCustomer[0].salary.update(101.091);
+        sp2.selected_user(0);
+        sp2.singleCustomer[0].acc_number.update("jjdf");
+        sp2.singleCustomer[0].bank_name.update("jjdf");
+        sp2.singleCustomer[0].email.update("jjdf");
+        sp2.singleCustomer[0].name.update("jjdf");
+        sp2.singleCustomer[0].phone_number.update("jjdf");
+        sp2.singleCustomer[0].bin.update("jjdf");
+        sp2.singleCustomer[0].salary.update(101.091);
 
 
-        // // sp.selected_user(1);
-        // // sp.singleCustomer[1].acc_number.update("jjdf");
-        // // sp.singleCustomer[1].bank_name.update("jjdf");
-        // // sp.singleCustomer[1].email.update("jjdf");
-        // // sp.singleCustomer[1].name.update("jjdf");
-        // // sp.singleCustomer[1].phone_number.update("jjdf");
-        // // sp.singleCustomer[1].bin.update("jjdf");
-        // // sp.singleCustomer[1].salary.update(50505.091);
-        // // sp.singleCustomer[1].savings.update(505.091);
+        sp2.selected_user(1);
+        sp2.singleCustomer[1].acc_number.update("jjdf");
+        sp2.singleCustomer[1].bank_name.update("jjdf");
+        sp2.singleCustomer[1].email.update("jjdf");
+        sp2.singleCustomer[1].name.update("jjdf");
+        sp2.singleCustomer[1].phone_number.update("jjdf");
+        sp2.singleCustomer[1].bin.update("jjdf");
+        sp2.singleCustomer[1].salary.update(50505.091);
+        sp2.singleCustomer[1].savings.update(505.091);
 
 
-        // // sp.singleCustomer[0].salary.print();
-        // // sp.singleCustomer[1].salary.print();
+        sp2.singleCustomer[0].salary.print();
+        sp2.singleCustomer[1].salary.print();
 
-        // // sp.singleCustomer[0].savings.print();
-        // // sp.singleCustomer[1].savings.print();
+        sp2.singleCustomer[0].savings.print();
+        sp2.singleCustomer[1].savings.print();
 
 
-        // // sp.singleCustomer[1].savings.timeUpdate(3650);
-        // // sp.singleCustomer[1].savings.print();
-
-        // // sp.print();
+        sp2.singleCustomer[1].savings.timeUpdate(3650);
+        sp2.singleCustomer[1].savings.print();
 
 
 
 
 
-        // /* */
-        // Organization org = new Organization(1);
 
-        // org.accNum = "yolo";
-        // org.bankName = "dtc";
-        // org.tin = "834";
-        // org.email = "hfh011@gmail.com";
-        // org.phnNum = "9284742";
-        // org.name = "jojo";
-
-        // org.create(1);
-        // org.print();
+        /* */
+        System.out.println();
+        System.out.println();
 
 
+        Organization org = new Organization(1);
+
+        org.accNum = "yolo";
+        org.bankName = "dtc";
+        org.tin = "834";
+        org.email = "hfh011@gmail.com";
+        org.phnNum = "9284742";
+        org.name = "jojo";
+
+        org.create(1);
+        org.print();
 
 
-        // /* */
-        // Manager mngr = new Manager(1);
 
-        // mngr.email="reuuir@gmail.com";
-        // mngr.name = "udhfh";
-        // mngr.phnNum= "01937321312";
+
+        /* */
+        System.out.println();
+        System.out.println();
+
+
+        Manager mngr = new Manager(1);
+
+        mngr.email="reuuir@gmail.com";
+        mngr.name = "udhfh";
+        mngr.phnNum= "01937321312";
         
-        // mngr.create(1);
-        // // mngr.print();
+        mngr.create(1);
+        // mngr.print();
 
 
-        // Officer ofcr = new Officer(1);
-        // ofcr.email="er@gmail.com";
-        // ofcr.name = "lol";
-        // ofcr.phnNum= "029374";
+        Officer ofcr = new Officer(1);
+        ofcr.email="er@gmail.com";
+        ofcr.name = "lol";
+        ofcr.phnNum= "029374";
 
-        // ofcr.create(1);
-        // // ofcr.print();
+        ofcr.create(1);
+        // ofcr.print();
 
 
-        // Trainee trne = new Trainee(1);
-        // trne.email="ff@gmail.com";
-        // trne.name = "fhg";
-        // trne.phnNum= "01867312";
+        Trainee trne = new Trainee(1);
+        trne.email="ff@gmail.com";
+        trne.name = "fhg";
+        trne.phnNum= "01867312";
 
-        // trne.create(1);
-        // // trne.print();
+        trne.create(1);
+        // trne.print();
 
-        // Employee emp = new Employee();
-        // emp.print(mngr, ofcr, trne);
+        Employee emp = new Employee();
+        emp.print(mngr, ofcr, trne);
     }
 }
 

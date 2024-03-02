@@ -102,6 +102,6 @@ public class Savings {
 
     public void print()
     {
-        System.out.println(this.amount);
+        System.out.println("Savings: " + this.amount);
     }
 }

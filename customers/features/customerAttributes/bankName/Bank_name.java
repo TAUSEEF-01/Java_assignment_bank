@@ -20,6 +20,6 @@ public class Bank_name {
 
     public void print()
     {
-        System.out.println(this.bank_name);
+        System.out.println("Bank Name: " + this.bank_name);
     }
 }

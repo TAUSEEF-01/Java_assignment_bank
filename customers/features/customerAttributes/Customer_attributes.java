@@ -11,6 +11,9 @@ import customers.features.customerAttributes.phoneNumber.Phone_number;
 import customers.features.money_exchange.moneySendToAccount.BkashToAcc.Bkash_to_acc;
 import customers.features.money_exchange.moneySendToAccount.EFT.Eft;
 import customers.features.money_exchange.moneySendToAccount.recipt.Recipt;
+import customers.features.money_exchange.moneyWithdraw.AccToBkashWallet.Acc_to_bkash_wallet;
+import customers.features.money_exchange.moneyWithdraw.CreditCard.Credit_card;
+import customers.features.money_exchange.moneyWithdraw.check.Check;
 
 public class Customer_attributes {
     public String a;
@@ -27,6 +30,9 @@ public class Customer_attributes {
     public Bkash_to_acc bkash_to_acc;
     public Eft eft;
     public Recipt rcpt;
+    public Acc_to_bkash_wallet acc_to_bkash_wallet;
+    public Check check;
+    public Credit_card credit_card;
 
     public Customer_attributes()
     {
@@ -42,10 +48,14 @@ public class Customer_attributes {
         bkash_to_acc = new Bkash_to_acc();
         eft = new Eft();
         rcpt = new Recipt();
+        acc_to_bkash_wallet = new Acc_to_bkash_wallet(salary, savings);
+        check = new Check(salary, savings);
+        credit_card = new Credit_card(salary, savings);
     }
 
     public void print()
     {
+        System.out.println("Account Number: ");
         acc_number.print();
         bank_name.print();
         email.print();
@@ -55,6 +65,8 @@ public class Customer_attributes {
         bin.print();
         salary.print();
         savings.print();
+        bkash_to_acc.print_balance();
+        eft.print_balance();
     }
 }
 

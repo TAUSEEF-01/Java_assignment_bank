@@ -92,6 +92,6 @@ public class Eft {
 
     public void print_balance()
     {
-        System.out.println(amount);
+        System.out.println("EFT Balance: " + amount);
     }
 }

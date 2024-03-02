@@ -89,6 +89,6 @@ public class Bkash_to_acc {
 
     public void print_balance()
     {
-        System.out.println(amount);
+        System.out.println("Bkash Balance: " + amount);
     }
 }

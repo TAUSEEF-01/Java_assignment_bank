@@ -3,7 +3,7 @@ package employee.trainee;
 import employee.employee_attributes.Employee_attributes;
 
 public class Trainee {
-    public String email="", name="", phnNum="";
+    public String email, name, phnNum;
     public Employee_attributes[] trainee;
     public int sz, curr_sz;
 
@@ -11,6 +11,10 @@ public class Trainee {
     {
         this.sz = n;
         this.curr_sz = 0;
+        email="";
+        name=""; 
+        phnNum="";
+
         trainee = new Employee_attributes[n];
     }
 

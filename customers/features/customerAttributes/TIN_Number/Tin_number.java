@@ -20,6 +20,6 @@ public class Tin_number {
 
     public void print()
     {
-        System.out.println(this.TIN_number);
+        System.out.println("TIN Number: " + this.TIN_number);
     }
 }

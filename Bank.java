@@ -19,33 +19,69 @@ public class Bank
 
 
 
-        // /* */
-        // // Single_person sp = new Single_person(2);
-        // Single_person sp = new Single_person(1);
+        /* */
+        // Single_person sp = new Single_person(2);
+        Single_person sp = new Single_person(1);
 
-        // sp.accNum = "yolo";
-        // sp.bankName = "dtc";
-        // sp.bin = "834";
-        // sp.email = "hfh011@gmail.com";
-        // sp.phnNum = "9284742";
-        // sp.name = "jojo";
-        // sp.money = 131.2;
-        // sp.salary = 1233.4;
-        // sp.savings = 292.0;
-        // sp.bkash = 800.0;
-        // sp.eft = 9.0;
+        sp.accNum = "yolo";
+        sp.bankName = "dtc";
+        sp.bin = "834";
+        sp.email = "hfh011@gmail.com";
+        sp.phnNum = "9284742";
+        sp.name = "jojo";
+        sp.money = 131.2;
+        sp.salary = 1233.4;
+        sp.savings = 292.0;
+        sp.bkash = 800.0;
+        sp.eft = 9.0;
 
 
         
 
-        // sp.create(1);
-        // sp.print();
+        sp.create(1);
+        sp.print();
 
-        // sp.singleCustomer[0].salary.print();
-        // sp.singleCustomer[0].salary.add(100, sp.singleCustomer[0].bkash_to_acc);
-        // sp.singleCustomer[0].salary.print();
-        // sp.singleCustomer[0].salary.add(100, sp.singleCustomer[0].rcpt);
-        // sp.singleCustomer[0].salary.print();
+        sp.singleCustomer[0].salary.print();
+        System.out.println();
+
+        sp.singleCustomer[0].salary.add(100, sp.singleCustomer[0].bkash_to_acc);
+        sp.singleCustomer[0].salary.print();
+        System.out.println();
+
+        sp.singleCustomer[0].salary.add(100, sp.singleCustomer[0].rcpt);
+        sp.singleCustomer[0].salary.print();
+        sp.singleCustomer[0].bkash_to_acc.print_balance();
+        System.out.println();
+
+        sp.singleCustomer[0].acc_to_bkash_wallet.bkash_cashin(100, sp.singleCustomer[0].bkash_to_acc);
+        sp.singleCustomer[0].salary.print();
+        sp.singleCustomer[0].bkash_to_acc.print_balance();
+        System.out.println();
+
+        sp.singleCustomer[0].check.cashout(1000);
+        sp.singleCustomer[0].salary.print();
+        System.out.println();
+
+        sp.singleCustomer[0].check.cashout(1000);
+        sp.singleCustomer[0].salary.print();
+        System.out.println();
+
+        sp.singleCustomer[0].salary.add(800, sp.singleCustomer[0].bkash_to_acc);
+        sp.singleCustomer[0].salary.print();
+        sp.singleCustomer[0].bkash_to_acc.print_balance();
+        System.out.println();
+
+        sp.singleCustomer[0].credit_card.cashout(100);
+        sp.singleCustomer[0].salary.print();
+        sp.singleCustomer[0].bkash_to_acc.print_balance();
+        System.out.println();
+
+        sp.singleCustomer[0].acc_to_bkash_wallet.bkash_cashin(150, sp.singleCustomer[0].bkash_to_acc);
+        sp.singleCustomer[0].salary.print();
+        sp.singleCustomer[0].bkash_to_acc.print_balance();
+        System.out.println();
+
+
 
 
         // // sp.singleCustomer[0].salary.update(1983.981);
@@ -145,5 +181,5 @@ public class Bank
 
 
 /*
-    javac customers/features/customerAttributes/Customer_attributes.java customers/features/customerAttributes/accountNumber/Account_number.java Bank.java customers/singlePerson/Single_person.java  customers/features/customerAttributes/bankName/Bank_name.java customers/features/customerAttributes/BIN_number/Bin_number.java customers/features/customerAttributes/name/Name.java customers/features/customerAttributes/email/Email.java customers/features/customerAttributes/phoneNumber/Phone_number.java customers/features/customerAttributes/TIN_Number/Tin_number.java customers/features/customerAttributes/name/Name.java employee/employee_attributes/Employee_attributes.java employee/manager/Manager.java employee/officer/Officer.java employee/trainee/Trainee.java employee/Employee.java customers/organization/Organization.java customers/features/accountType/salary/Salary.java customers/features/accountType/savings/Savings.java customers/features/scheme/interest/Interest.java customers/features/scheme/texCut/Texcut.java customers/features/money_exchange/moneySendToAccount/BkashToAcc/Bkash_to_acc.java customers/features/money_exchange/moneySendToAccount/EFT/Eft.java customers/features/money_exchange/moneySendToAccount/recipt/Recipt.java 
+    javac customers/features/customerAttributes/Customer_attributes.java customers/features/customerAttributes/accountNumber/Account_number.java Bank.java customers/singlePerson/Single_person.java  customers/features/customerAttributes/bankName/Bank_name.java customers/features/customerAttributes/BIN_number/Bin_number.java customers/features/customerAttributes/name/Name.java customers/features/customerAttributes/email/Email.java customers/features/customerAttributes/phoneNumber/Phone_number.java customers/features/customerAttributes/TIN_Number/Tin_number.java customers/features/customerAttributes/name/Name.java employee/employee_attributes/Employee_attributes.java employee/manager/Manager.java employee/officer/Officer.java employee/trainee/Trainee.java employee/Employee.java customers/organization/Organization.java customers/features/accountType/salary/Salary.java customers/features/accountType/savings/Savings.java customers/features/scheme/interest/Interest.java customers/features/scheme/texCut/Texcut.java customers/features/money_exchange/moneySendToAccount/BkashToAcc/Bkash_to_acc.java customers/features/money_exchange/moneySendToAccount/EFT/Eft.java customers/features/money_exchange/moneySendToAccount/recipt/Recipt.java customers/features/money_exchange/moneyWithdraw/AccToBkashWallet/Acc_to_bkash_wallet.java customers/features/money_exchange/moneyWithdraw/check/Check.java customers/features/money_exchange/moneyWithdraw/CreditCard/Credit_card.java 
 */

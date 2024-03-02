@@ -20,6 +20,6 @@ public class Phone_number {
 
     public void print()
     {
-        System.out.println(this.phoneNumber);
+        System.out.println("Phone Number: " + this.phoneNumber);
     }
 }

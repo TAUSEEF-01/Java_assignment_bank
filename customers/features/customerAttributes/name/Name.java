@@ -20,6 +20,6 @@ public class Name {
 
     public void print()
     {
-        System.out.println(this.name);
+        System.out.println("Name: " + this.name);
     }
 }

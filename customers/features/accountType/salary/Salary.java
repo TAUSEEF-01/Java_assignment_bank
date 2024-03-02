@@ -102,6 +102,6 @@ public class Salary {
 
     public void print()
     {
-        System.out.println(this.amount);
+        System.out.println("Salary: " + this.amount);
     }
 }

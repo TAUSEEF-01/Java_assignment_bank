@@ -3,7 +3,7 @@ package employee.officer;
 import employee.employee_attributes.Employee_attributes;
 
 public class Officer {
-    public String email="", name="", phnNum="";
+    public String email, name, phnNum;
     public Employee_attributes[] officer;
     public int sz, curr_sz;
 
@@ -11,6 +11,10 @@ public class Officer {
     {
         this.sz = n;
         this.curr_sz = 0;
+        email="";
+        name=""; 
+        phnNum="";
+        
         officer = new Employee_attributes[n];
     }
 

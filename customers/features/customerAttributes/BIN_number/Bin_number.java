@@ -20,6 +20,6 @@ public class Bin_number {
 
     public void print()
     {
-        System.out.println(this.BIN_number);
+        System.out.println("BIN Number: " + this.BIN_number);
     }
 }

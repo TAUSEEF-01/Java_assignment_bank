@@ -20,7 +20,8 @@ public class Bank
 
 
         // /* */
-        Single_person sp = new Single_person(2);
+        // // Single_person sp = new Single_person(2);
+        // Single_person sp = new Single_person(1);
 
         // sp.accNum = "yolo";
         // sp.bankName = "dtc";
@@ -29,49 +30,63 @@ public class Bank
         // sp.phnNum = "9284742";
         // sp.name = "jojo";
         // sp.money = 131.2;
+        // sp.salary = 1233.4;
+        // sp.savings = 292.0;
+        // sp.bkash = 800.0;
+        // sp.eft = 9.0;
+
 
         
 
         // sp.create(1);
         // sp.print();
 
-        // sp.singleCustomer[0].salary.update(1983.981);
-        // sp.print();
-
-        // sp.singleCustomer[0].salary.add(920);
-        // sp.print();
-
-
-        sp.selected_user(0);
-        sp.singleCustomer[0].acc_number.update("jjdf");
-        sp.singleCustomer[0].bank_name.update("jjdf");
-        sp.singleCustomer[0].email.update("jjdf");
-        sp.singleCustomer[0].name.update("jjdf");
-        sp.singleCustomer[0].phone_number.update("jjdf");
-        sp.singleCustomer[0].bin.update("jjdf");
-        sp.singleCustomer[0].salary.update(101.091);
+        // sp.singleCustomer[0].salary.print();
+        // sp.singleCustomer[0].salary.add(100, sp.singleCustomer[0].bkash_to_acc);
+        // sp.singleCustomer[0].salary.print();
+        // sp.singleCustomer[0].salary.add(100, sp.singleCustomer[0].rcpt);
+        // sp.singleCustomer[0].salary.print();
 
 
-        sp.selected_user(1);
-        sp.singleCustomer[1].acc_number.update("jjdf");
-        sp.singleCustomer[1].bank_name.update("jjdf");
-        sp.singleCustomer[1].email.update("jjdf");
-        sp.singleCustomer[1].name.update("jjdf");
-        sp.singleCustomer[1].phone_number.update("jjdf");
-        sp.singleCustomer[1].bin.update("jjdf");
-        sp.singleCustomer[1].salary.update(50505.091);
-        sp.singleCustomer[1].savings.update(505.091);
+        // // sp.singleCustomer[0].salary.update(1983.981);
+        // // sp.print();
+
+        // // sp.singleCustomer[0].salary.add(920);
+        // // sp.print();
 
 
-        sp.singleCustomer[0].salary.print();
-        sp.singleCustomer[1].salary.print();
+        // // sp.selected_user(0);
+        // // sp.singleCustomer[0].acc_number.update("jjdf");
+        // // sp.singleCustomer[0].bank_name.update("jjdf");
+        // // sp.singleCustomer[0].email.update("jjdf");
+        // // sp.singleCustomer[0].name.update("jjdf");
+        // // sp.singleCustomer[0].phone_number.update("jjdf");
+        // // sp.singleCustomer[0].bin.update("jjdf");
+        // // sp.singleCustomer[0].salary.update(101.091);
 
-        sp.singleCustomer[0].savings.print();
-        sp.singleCustomer[1].savings.print();
+
+        // // sp.selected_user(1);
+        // // sp.singleCustomer[1].acc_number.update("jjdf");
+        // // sp.singleCustomer[1].bank_name.update("jjdf");
+        // // sp.singleCustomer[1].email.update("jjdf");
+        // // sp.singleCustomer[1].name.update("jjdf");
+        // // sp.singleCustomer[1].phone_number.update("jjdf");
+        // // sp.singleCustomer[1].bin.update("jjdf");
+        // // sp.singleCustomer[1].salary.update(50505.091);
+        // // sp.singleCustomer[1].savings.update(505.091);
 
 
-        sp.singleCustomer[1].savings.timeUpdate(3650);
-        sp.singleCustomer[1].savings.print();
+        // // sp.singleCustomer[0].salary.print();
+        // // sp.singleCustomer[1].salary.print();
+
+        // // sp.singleCustomer[0].savings.print();
+        // // sp.singleCustomer[1].savings.print();
+
+
+        // // sp.singleCustomer[1].savings.timeUpdate(3650);
+        // // sp.singleCustomer[1].savings.print();
+
+        // // sp.print();
 
 
 

@@ -3,7 +3,8 @@ package customers.singlePerson;
 import customers.features.customerAttributes.Customer_attributes;
 
 public class Single_person {
-    public String accNum="", bankName="", email="", name="", phnNum="", bin="";
+    public String accNum, bankName, email, name, phnNum, bin;
+    public double salary, savings, bkash, eft;
     public Customer_attributes[] singleCustomer;
     public int sz, curr_sz;
     public double money;
@@ -13,6 +14,17 @@ public class Single_person {
         this.sz = n;
         this.curr_sz = 0;
         this.money = 0;
+        this.accNum="";
+        this.bankName="";
+        this.email="";
+        this.name="";
+        this.phnNum="";
+        this.bin="";
+        this.salary =0;
+        this.savings =0;
+        this.bkash =0;
+        this.eft =0;
+
         singleCustomer = new Customer_attributes[n];
     }
 
@@ -32,8 +44,10 @@ public class Single_person {
             singleCustomer[i].name.update(name);
             singleCustomer[i].phone_number.update(phnNum);
             singleCustomer[i].bin.update(bin);
-            singleCustomer[i].salary.update(money);
-            singleCustomer[i].savings.update(money);
+            singleCustomer[i].salary.update(salary);
+            singleCustomer[i].savings.update(savings);
+            singleCustomer[i].bkash_to_acc.bkashWallet(bkash);
+            singleCustomer[i].eft.eft_balance(eft);
         }
         curr_sz += n;
     }
@@ -50,6 +64,8 @@ public class Single_person {
             singleCustomer[i].bin.print();
             singleCustomer[i].salary.print();
             singleCustomer[i].savings.print();
+            singleCustomer[i].bkash_to_acc.print_balance();
+            singleCustomer[i].eft.print_balance();
         }
     }
 
@@ -65,6 +81,8 @@ public class Single_person {
             singleCustomer[i].bin.print();
             singleCustomer[i].salary.print();
             singleCustomer[i].savings.print();
+            singleCustomer[i].bkash_to_acc.print_balance();
+            singleCustomer[i].eft.print_balance();
         }
     }
 
@@ -78,5 +96,8 @@ public class Single_person {
         singleCustomer[n].phone_number.print();
         singleCustomer[n].bin.print();
         singleCustomer[n].salary.print();
+        singleCustomer[n].savings.print();
+        singleCustomer[n].bkash_to_acc.print_balance();
+        singleCustomer[n].eft.print_balance();
     }
 }

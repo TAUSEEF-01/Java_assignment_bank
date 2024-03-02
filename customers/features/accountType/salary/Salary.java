@@ -1,5 +1,8 @@
 package customers.features.accountType.salary;
 
+import customers.features.money_exchange.moneySendToAccount.BkashToAcc.Bkash_to_acc;
+import customers.features.money_exchange.moneySendToAccount.EFT.Eft;
+import customers.features.money_exchange.moneySendToAccount.recipt.Recipt;
 import customers.features.scheme.interest.Interest;
 
 public class Salary {
@@ -15,6 +18,18 @@ public class Salary {
         days = 0;
         flag = 1;
         rate = .025;
+    }
+
+    public Salary(double n)
+    {
+        
+        this.initial_amount = n;
+        interest = new Interest();
+        flag = 0;
+        this.amount = n;
+
+        days = 0;
+        rate = .02;
     }
 
     public void update(double n)
@@ -49,6 +64,31 @@ public class Salary {
     {
         this.amount += n;
     }
+
+
+    public void add(double n, Bkash_to_acc bk)
+    {
+        if(bk.addMoney_bankAcc(n) == true)
+        this.amount += n;
+        else 
+        this.amount += 0;
+    }
+
+
+    public void add(double n, Eft eft)
+    {
+        if(eft.addMoney_bankAcc(n) == true)
+        this.amount += n;
+        else 
+        this.amount += 0;
+    }
+
+
+    public void add(double n, Recipt rcpt)
+    {
+        this.amount += n;
+    }
+
 
     public double initialBalance()
     {

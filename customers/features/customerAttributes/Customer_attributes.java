@@ -8,6 +8,9 @@ import customers.features.customerAttributes.bankName.Bank_name;
 import customers.features.customerAttributes.email.Email;
 import customers.features.customerAttributes.name.Name;
 import customers.features.customerAttributes.phoneNumber.Phone_number;
+import customers.features.money_exchange.moneySendToAccount.BkashToAcc.Bkash_to_acc;
+import customers.features.money_exchange.moneySendToAccount.EFT.Eft;
+import customers.features.money_exchange.moneySendToAccount.recipt.Recipt;
 
 public class Customer_attributes {
     public String a;
@@ -21,6 +24,9 @@ public class Customer_attributes {
     public Bin_number bin;
     public Salary salary;
     public Savings savings;
+    public Bkash_to_acc bkash_to_acc;
+    public Eft eft;
+    public Recipt rcpt;
 
     public Customer_attributes()
     {
@@ -33,6 +39,9 @@ public class Customer_attributes {
         bin = new Bin_number();
         salary = new Salary();
         savings = new Savings();
+        bkash_to_acc = new Bkash_to_acc();
+        eft = new Eft();
+        rcpt = new Recipt();
     }
 
     public void print()

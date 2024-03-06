@@ -1,4 +1,5 @@
 package customers.features.customerAttributes;
+import customers.features.accountType.both.Both;
 import customers.features.accountType.salary.Salary;
 import customers.features.accountType.savings.Savings;
 import customers.features.customerAttributes.BIN_number.Bin_number;
@@ -29,10 +30,11 @@ public class Customer_attributes {
     public Savings savings;
     public Bkash_to_acc bkash_to_acc;
     public Eft eft;
-    public Recipt rcpt;
+    public Recipt recipt;
     public Acc_to_bkash_wallet acc_to_bkash_wallet;
     public Check check;
     public Credit_card credit_card;
+    public Both both;
 
     public Customer_attributes()
     {
@@ -47,10 +49,15 @@ public class Customer_attributes {
         savings = new Savings();
         bkash_to_acc = new Bkash_to_acc();
         eft = new Eft();
-        rcpt = new Recipt();
+        // recipt = new Recipt();
+        recipt = new Recipt(both);
         acc_to_bkash_wallet = new Acc_to_bkash_wallet(salary, savings);
-        check = new Check(salary, savings);
-        credit_card = new Credit_card(salary, savings);
+        // check = new Check(salary, savings);
+        check = new Check();
+        // credit_card = new Credit_card(salary, savings);
+        // credit_card = new Credit_card(both);
+        credit_card = new Credit_card();
+        both = new Both();
     }
 
     public void print()
@@ -67,6 +74,7 @@ public class Customer_attributes {
         savings.print();
         bkash_to_acc.print_balance();
         eft.print_balance();
+        both.print();
     }
 }
 

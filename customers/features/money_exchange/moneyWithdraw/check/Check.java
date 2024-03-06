@@ -1,70 +1,39 @@
 package customers.features.money_exchange.moneyWithdraw.check;
 
+import customers.features.accountType.both.Both;
 import customers.features.accountType.salary.Salary;
 import customers.features.accountType.savings.Savings;
 
 public class Check {
-    public double amount;
-    public Savings savings;
-    public Salary salary;
+    public Both both;
 
-
-    public Check(Savings sv)
+    public void update(Both bt)
     {
-        savings = sv;
-        salary = null;
+        this.both = bt;
     }
 
-    public Check(Salary sr)
+    public void cashout(double money)
     {
-        salary = sr;
-        savings = null;
-    }
-
-    public Check(Salary sr, Savings sv)
-    {
-        savings = sv;
-        salary = sr;
-    }
-
-    public void cashout(double n)
-    {
-        if(savings == null)
+        if(both.salary.balance() >= money)
         {
-            if(salary.balance() >= n)
-            {
-                salary.update(salary.balance() - n);
-            }
-            else
-            {
-                System.out.println("Not enough balance!");
-            }
+            System.out.println("Amount of cash out by check: " + money);
+            both.salary.update(both.salary.balance() - money);
         }
-        else if(salary == null)
+        else if(both.savings.balance() >= money)
         {
-            if(savings.balance() >= n)
-            {
-                savings.update(savings.balance() - n);
-            }
-            else
-            {
-                System.out.println("Not enough balance!");
-            }
+            System.out.println("Amount of cash out by check: " + money);
+            both.savings.update(both.savings.balance() - money);
+        }
+        else if(both.savings.balance() + both.salary.balance() >= money)
+        {
+            System.out.println("Amount of cash out by check: " + money);
+            money -= both.savings.balance();
+            both.savings.update(0);
+            both.salary.update(both.salary.balance() - money);
         }
         else
         {
-            if(salary.balance() >= n)
-            {
-                salary.update(salary.balance() - n);
-            }
-            else if(savings.balance() >= n)
-            {
-                savings.update(savings.balance() - n);
-            }
-            else
-            {
-                System.out.println("Not enough balance!");
-            }
+            System.out.println("Not enough balance!");
         }
     }
 }

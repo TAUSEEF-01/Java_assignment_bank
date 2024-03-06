@@ -28,10 +28,20 @@ public class Single_person {
         singleCustomer = new Customer_attributes[n];
     }
 
-    public void selected_user(int n)
-    {
-        singleCustomer[n] = new Customer_attributes();
-    }
+    // public void selected_user(int n)
+    // {
+    //     if(curr_sz < n)
+    //     {
+    //         System.out.println("Create new Customer attribute.");
+    //         return;
+    //     }
+
+    //     for(int i=curr_sz; i<=n; i++)
+    //     {
+    //         if(singleCustomer[i] == null)
+    //         singleCustomer[i] = new Customer_attributes();
+    //     }
+    // }
 
     public void create(int n)
     {
@@ -44,10 +54,15 @@ public class Single_person {
             singleCustomer[i].name.update(name);
             singleCustomer[i].phone_number.update(phnNum);
             singleCustomer[i].bin.update(bin);
-            singleCustomer[i].salary.update(salary);
-            singleCustomer[i].savings.update(savings);
+            // singleCustomer[i].salary.update(salary);
+            // singleCustomer[i].savings.update(savings);
             singleCustomer[i].bkash_to_acc.bkashWallet(bkash);
             singleCustomer[i].eft.eft_balance(eft);
+            // singleCustomer[i].both.salary.update(salary);
+            // singleCustomer[i].both.savings.update(savings);
+            singleCustomer[i].both.update(salary, savings);
+            singleCustomer[i].check.update(singleCustomer[i].both);
+            singleCustomer[i].credit_card.update(singleCustomer[i].both);
         }
         curr_sz += n;
     }
@@ -62,11 +77,15 @@ public class Single_person {
             singleCustomer[i].name.print();
             singleCustomer[i].phone_number.print();
             singleCustomer[i].bin.print();
-            singleCustomer[i].salary.print();
-            singleCustomer[i].savings.print();
+            // singleCustomer[i].salary.print();
+            // singleCustomer[i].savings.print();
             singleCustomer[i].bkash_to_acc.print_balance();
             singleCustomer[i].eft.print_balance();
+            singleCustomer[i].both.print();
+
+            System.out.println();
         }
+        System.out.println();
     }
 
     public void print(int n)
@@ -79,11 +98,15 @@ public class Single_person {
             singleCustomer[i].name.print();
             singleCustomer[i].phone_number.print();
             singleCustomer[i].bin.print();
-            singleCustomer[i].salary.print();
-            singleCustomer[i].savings.print();
+            // singleCustomer[i].salary.print();
+            // singleCustomer[i].savings.print();
             singleCustomer[i].bkash_to_acc.print_balance();
             singleCustomer[i].eft.print_balance();
+            singleCustomer[i].both.print();
+
+            System.out.println();
         }
+        System.out.println();
     }
 
 
@@ -95,9 +118,13 @@ public class Single_person {
         singleCustomer[n].name.print();
         singleCustomer[n].phone_number.print();
         singleCustomer[n].bin.print();
-        singleCustomer[n].salary.print();
-        singleCustomer[n].savings.print();
+        singleCustomer[n].both.print();
+        // singleCustomer[n].both.salary.print();
+        // singleCustomer[n].both.savings.print();
+        // singleCustomer[n].salary.print();
+        // singleCustomer[n].savings.print();
         singleCustomer[n].bkash_to_acc.print_balance();
         singleCustomer[n].eft.print_balance();
+        System.out.println();
     }
 }

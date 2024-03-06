@@ -1,5 +1,6 @@
 package customers.features.money_exchange.moneySendToAccount.EFT;
 
+import customers.features.accountType.both.Both;
 import customers.features.accountType.salary.Salary;
 import customers.features.accountType.savings.Savings;
 
@@ -59,11 +60,11 @@ public class Eft {
         }
     }
 
-    public void addMoney_bankAcc(double money, Salary sr)
+    public void addMoney_bankAcc(double money, Both bt)
     {
         if(money <= amount)
         {
-            sr.add(money);
+            bt.salary.add(money);
             amount -= money;
         }
         else
@@ -72,18 +73,33 @@ public class Eft {
         }
     }
 
-    public void addMoney_bankAcc(double money, Savings sv)
-    {
-        if(money <= amount)
-        {
-            sv.add(money);
-            amount -= money;
-        }
-        else
-        {
-            System.out.println("Not enough balance in your account!");
-        }
-    }
+    
+
+    // public void addMoney_bankAcc(double money, Salary sr)
+    // {
+    //     if(money <= amount)
+    //     {
+    //         sr.add(money);
+    //         amount -= money;
+    //     }
+    //     else
+    //     {
+    //         System.out.println("Not enough balance in your account!");
+    //     }
+    // }
+
+    // public void addMoney_bankAcc(double money, Savings sv)
+    // {
+    //     if(money <= amount)
+    //     {
+    //         sv.add(money);
+    //         amount -= money;
+    //     }
+    //     else
+    //     {
+    //         System.out.println("Not enough balance in your account!");
+    //     }
+    // }
 
     public void Eft_balance_addMoney(double money)
     {

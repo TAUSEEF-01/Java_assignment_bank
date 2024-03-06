@@ -1,5 +1,6 @@
 package customers.features.money_exchange.moneySendToAccount.BkashToAcc;
 
+import customers.features.accountType.both.Both;
 import customers.features.accountType.salary.Salary;
 import customers.features.accountType.savings.Savings;
 
@@ -56,11 +57,24 @@ public class Bkash_to_acc {
         }
     }
 
-    public void addMoney_bankAcc(double money, Salary sr)
+
+    // public void bkash_to_acc(double money)
+    // {
+    //     if(money <= amount)
+    //     {
+    //         amount -= money;
+    //     }
+    //     else
+    //     {
+    //         System.out.println("Not enough balance in your account!");
+    //     }
+    // }
+
+    public void addMoney_bankAcc(double money, Both bt)
     {
         if(money <= amount)
         {
-            sr.add(money);
+            bt.salary.add(money);
             amount -= money;
         }
         else
@@ -69,18 +83,44 @@ public class Bkash_to_acc {
         }
     }
 
-    public void addMoney_bankAcc(double money, Savings sv)
-    {
-        if(money <= amount)
-        {
-            sv.add(money);
-            amount -= money;
-        }
-        else
-        {
-            System.out.println("Not enough balance in your account!");
-        }
-    }
+    // public void addMoney_bankAcc(double money, Both bt)
+    // {
+    //     if(money <= amount)
+    //     {
+    //         bt.savings.add(money);
+    //         amount -= money;
+    //     }
+    //     else
+    //     {
+    //         System.out.println("Not enough balance in your account!");
+    //     }
+    // }
+
+    // public void addMoney_bankAcc(double money, Salary sr)
+    // {
+    //     if(money <= amount)
+    //     {
+    //         sr.add(money);
+    //         amount -= money;
+    //     }
+    //     else
+    //     {
+    //         System.out.println("Not enough balance in your account!");
+    //     }
+    // }
+
+    // public void addMoney_bankAcc(double money, Savings sv)
+    // {
+    //     if(money <= amount)
+    //     {
+    //         sv.add(money);
+    //         amount -= money;
+    //     }
+    //     else
+    //     {
+    //         System.out.println("Not enough balance in your account!");
+    //     }
+    // }
 
     public void bakashWallet_addMoney(double money)
     {
